@@ -5,7 +5,7 @@ import Bookmark from "./components/Bookmark";
 import Converter from "./components/Converter";
 import CPDF from "./components/CPDF";
 import Footer from "./components/Footer";
-const page = () => {
+const Page = () => {
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearch = (value) => {
@@ -23,4 +23,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
