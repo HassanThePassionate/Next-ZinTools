@@ -83,35 +83,37 @@ const CPDF = ({ searchValue }) => {
       <section className="converter">
         <div className="container">
           <h1 className="lg">Convert to PDF</h1>
-          <div className="swiper-button-prev" onClick={goPrev}>
-            <i class="fa-solid fa-arrow-left by"></i>
-          </div>
-          <Swiper
-            slidesPerView={5}
-            spaceBetween={30}
-            onSwiper={(swiper) => setSwiperInstance(swiper)}
-            className="mySwiper"
-          >
-            <div className="cards">
-              {filteredCards.length > 0 ? (
-                filteredCards.map((card, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="card">
-                      <img src={card.img} alt="img" width="65" height="65" />
-                      <h3>{card.title}</h3>
-                      <p>{card.des}</p>
-                    </div>
-                  </SwiperSlide>
-                ))
-              ) : (
-                <div className="no-results">
-                  <p>Nothing found</p>
-                </div>
-              )}
+          <div className="other">
+            <div className="swiper-button-prev" onClick={goPrev}>
+              <i class="fa-solid fa-arrow-left by"></i>
             </div>
-          </Swiper>
-          <div className="swiper-button-next" onClick={goNext}>
-            <i class="fa-solid fa-arrow-right by-1"></i>
+            <Swiper
+              slidesPerView={5}
+              spaceBetween={30}
+              onSwiper={(swiper) => setSwiperInstance(swiper)}
+              className="mySwiper"
+            >
+              <div className="cards">
+                {filteredCards.length > 0 ? (
+                  filteredCards.map((card, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="card">
+                        <img src={card.img} alt="img" width="65" height="65" />
+                        <h3>{card.title}</h3>
+                        <p>{card.des}</p>
+                      </div>
+                    </SwiperSlide>
+                  ))
+                ) : (
+                  <div className="no-results">
+                    <p>Nothing found</p>
+                  </div>
+                )}
+              </div>
+            </Swiper>
+            <div className="swiper-button-next" onClick={goNext}>
+              <i class="fa-solid fa-arrow-right by-1"></i>
+            </div>
           </div>
         </div>
       </section>

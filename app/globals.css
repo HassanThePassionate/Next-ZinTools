@@ -211,19 +211,29 @@ header {
 }
 
 .by-1 {
+  position: absolute;
+  top: 50%;
   padding: 0.7rem;
   border-radius: 50%;
   border: 2px solid #000;
   cursor: pointer;
   margin: 0.5rem 0;
+  z-index: 8;
+  right: -2%;
+  transform: translateY(-50%);
 }
 
 .by {
+  position: absolute;
+  top: 50%;
+  left: -2%;
+  transform: translateY(-50%);
   padding: 0.7rem;
   border-radius: 50%;
   border: 2px solid #000;
   cursor: pointer;
   margin: 0.5rem 0;
+  z-index: 8;
 }
 
 .left-text {
@@ -373,6 +383,10 @@ header {
   color: red;
   font-size: 2rem;
   font-weight: 600;
+}
+
+.other {
+  position: relative;
 }
 
 @media screen and (max-width: 1105px) {
