@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 // Reset
 
 * {
@@ -282,7 +282,7 @@ header{
 .main-footer{
     background-color: $half-light;
     margin-top: 72px;
-
+padding: 0 12px;
 
 
     .top-footer{
@@ -293,7 +293,6 @@ header{
     display: flex;
     align-items: center;
     gap: 32px;
-    padding-left: 50px;
 
     h5{
         font-size: 1rem;
@@ -331,9 +330,7 @@ header{
      
  }
 
- hr{
-    margin: 0 50px;
- }
+
 
  .main-footer 
  .main-footer .top-footer .social .icons i:hover{
@@ -341,13 +338,15 @@ header{
  }
  .footer-list{
     display: flex;
-    gap: 8.5rem;
-    margin: 30px 50px;
+    gap: 8px;
+ padding: 40px 0;
     flex-wrap: wrap;
-
+border-top: 1px solid #e6e6e6;
+border-bottom: 1px solid #e6e6e6;
 
 
     .links{
+      flex-basis: calc(20% - 8px);
         h3{
             padding-bottom: 1.5rem;
             font-size: 1rem;
@@ -358,12 +357,16 @@ header{
          }
 
          h4{
-            padding-bottom: 0.5rem;
-            padding-top: 0.5rem;
+            padding-bottom: 8px;
+            padding-top: 8px;
             font-weight: 400;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             cursor: pointer;
+            color: #4b4b4b;
+         }
+         h4:hover{
+          color: #000;
          }
 
     } 
@@ -376,14 +379,16 @@ header{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: pointer;
 }
+
 .bottom-footer{
    min-height:  10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    margin: 0 50px;
     flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 
 }
 
@@ -398,18 +403,20 @@ header{
 .f-links{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .f-links p .a {
     color: $dark;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.f-links p .a:hover{
+  text-decoration: underline;
+}
 .svg{
-    height: 60px ;
-    width: 60px;
+  padding: 12px;
     background-color: #dedede;
     display: flex;
     justify-content: center;

@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Bookmark from "./components/Bookmark";
 import Converter from "./components/Converter";
 import CPDF from "./components/CPDF";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 const page = () => {
   const [searchValue, setSearchValue] = useState("");
 
