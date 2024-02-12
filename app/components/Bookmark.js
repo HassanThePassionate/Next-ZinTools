@@ -39,6 +39,7 @@ const Bookmark = ({ searchValue }) => {
           <div className="cards">
             {filteredCards.map((card, index) => (
               <div className="card" key={index}>
+                <i class="fa-regular fa-bookmark book"></i>
                 <Image
                   src={card.img}
                   alt="img"

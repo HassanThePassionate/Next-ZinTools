@@ -86,6 +86,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s;
   cursor: pointer;
   text-align: left;
+  margin: 1rem 0;
+  position: relative;
 }
 .card p {
   margin-top: 12px;
@@ -99,6 +101,15 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px;
   color: #e28d67;
 }
+.card .book {
+  font-size: 30px;
+  position: absolute;
+  right: 1.7rem;
+  top: 0.5rem;
+  color: #000;
+  opacity: 0;
+  transition: all 0.3s;
+}
 .card h3 {
   margin-top: 16px;
   font-weight: 700;
@@ -110,11 +121,14 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
+.card:hover .book {
+  opacity: 100;
+}
 
 .container {
   margin: 0 auto;
   max-width: 1425px;
-  padding: 0 16px;
+  padding: 0 1.3rem;
   width: 100%;
 }
 
@@ -296,14 +310,11 @@ header {
 
 .footer-list {
   display: flex;
-  gap: 8px;
+  gap: 8.5rem;
   padding: 40px 0;
-  flex-wrap: wrap;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
-}
-.footer-list .links {
-  flex-basis: calc(20% - 8px);
+  flex-wrap: wrap;
 }
 .footer-list .links h3 {
   padding-bottom: 1.5rem;
@@ -406,13 +417,15 @@ header {
   }
 }
 @media (max-width: 500px) {
-  .container {
-    margin: 0px 10px;
-    max-width: 200px;
-    padding: 0 5px;
-    width: 100%;
-  }
   #bookmark {
-    padding: 0px;
+    padding: 1px;
+  }
+  .by {
+    left: -12%;
+    position: absolute;
+  }
+  .by-1 {
+    right: -12%;
+    position: absolute;
   }
 }/*# sourceMappingURL=globals.css.map */

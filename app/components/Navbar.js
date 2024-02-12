@@ -21,7 +21,7 @@ const Navbar = ({ onsearch }) => {
             <form>
               <div className="search-bar">
                 <input
-                  type="search"
+                  type="text"
                   name="search"
                   className="search"
                   placeholder="Search for Movie, TV Shows, Themes & Cast"
