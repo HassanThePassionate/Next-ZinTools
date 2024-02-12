@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 10px 25px;
+  padding: 12px 25px;
   border-radius: 25px;
   font-size: 14px;
   border: none;
@@ -208,6 +208,22 @@ header {
 
 .converter {
   padding: 40px;
+}
+
+.by-1 {
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.by {
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+  margin: 0.5rem 0;
 }
 
 .left-text {

@@ -16,8 +16,8 @@ const Page = () => {
       <Navbar onsearch={handleSearch} />
       <Bookmark searchValue={searchValue} />
       <Converter searchValue={searchValue} />
-      <Converter searchValue={searchValue} />
       <CPDF searchValue={searchValue} />
+      <Converter searchValue={searchValue} />
       <Footer />
     </>
   );
