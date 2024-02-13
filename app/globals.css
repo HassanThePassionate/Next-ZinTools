@@ -102,11 +102,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #e28d67;
 }
 .card .book {
-  font-size: 30px;
+  font-size: 23px;
   position: absolute;
-  right: 1.7rem;
-  top: 0.5rem;
-  color: #000;
+  right: 1.5rem;
+  top: 0.3rem;
+  color: #000000;
   opacity: 0;
   transition: all 0.3s;
 }

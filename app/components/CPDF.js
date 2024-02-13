@@ -106,7 +106,7 @@ const CPDF = ({ searchValue }) => {
         <h1 className="lg">Convert to PDF</h1>
         <div className="other">
           <div className="swipers-button-prev" onClick={goPrev}>
-            <i class="fa-solid fa-arrow-left by"></i>
+            <i className="fa-solid fa-arrow-left by"></i>
           </div>
           <Swiper
             slidesPerView={slidesPerView}
@@ -133,7 +133,7 @@ const CPDF = ({ searchValue }) => {
             </div>
           </Swiper>
           <div className="swipers-button-next" onClick={goNext}>
-            <i class="fa-solid fa-arrow-right by-1"></i>
+            <i className="fa-solid fa-arrow-right by-1"></i>
           </div>
         </div>
       </div>
